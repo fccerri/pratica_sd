@@ -1,0 +1,9 @@
+|aula02_2
+Qa <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+Qb <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

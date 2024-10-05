@@ -1,0 +1,41 @@
+# Compile of part2.vhd was successful.
+# Compile of part3.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.part3
+# vsim work.part3 
+# Start time: 16:40:20 on Aug 27,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.part3(bdf_type)
+# Loading work.part2(bdf_type)
+add wave -position insertpoint sim:/part3/*
+force -freeze sim:/part3/Clk 0 0
+force -freeze sim:/part3/D 0 0
+run
+force -freeze sim:/part3/D 1 0
+run
+force -freeze sim:/part3/D 0 0
+run
+force -freeze sim:/part3/Clk 1 0
+run
+force -freeze sim:/part3/D 1 0
+run
+force -freeze sim:/part3/D 0 0
+force -freeze sim:/part3/D 0 0
+run
+force -freeze sim:/part3/Clk 0 0
+run
+force -freeze sim:/part3/D 1 0
+run
+force -freeze sim:/part3/D 0 0
+run
+force -freeze sim:/part3/D 1 0
+run
+force -freeze sim:/part3/Clk 1 0
+run
+run
+force -freeze sim:/part3/D 0 0
+run
+# End time: 16:46:55 on Aug 27,2024, Elapsed time: 0:06:35
+# Errors: 0, Warnings: 7

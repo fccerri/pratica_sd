@@ -1,0 +1,8 @@
+C:/Users/rodri/OneDrive/Documentos/projetos/Quartus/Projeto1/part2/part2.v {1 {vlog -work work -stats=none C:/Users/rodri/OneDrive/Documentos/projetos/Quartus/Projeto1/part2/part2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module part2
+
+Top level modules:
+	part2
+
+} {} {}}

@@ -1,0 +1,181 @@
+|part1_3
+Key0 => part1:c.Clk
+Sw0 => part1:c.T
+Sw1 => part1:c.Clear
+disp0[0] <= display7seg:d0.out_disp[0]
+disp0[1] <= display7seg:d0.out_disp[1]
+disp0[2] <= display7seg:d0.out_disp[2]
+disp0[3] <= display7seg:d0.out_disp[3]
+disp0[4] <= display7seg:d0.out_disp[4]
+disp0[5] <= display7seg:d0.out_disp[5]
+disp0[6] <= display7seg:d0.out_disp[6]
+disp1[0] <= display7seg:d1.out_disp[0]
+disp1[1] <= display7seg:d1.out_disp[1]
+disp1[2] <= display7seg:d1.out_disp[2]
+disp1[3] <= display7seg:d1.out_disp[3]
+disp1[4] <= display7seg:d1.out_disp[4]
+disp1[5] <= display7seg:d1.out_disp[5]
+disp1[6] <= display7seg:d1.out_disp[6]
+
+
+|part1_3|part1:c
+Clk => fft:f0.Clk
+Clk => fft:f1.Clk
+Clk => fft:f2.Clk
+Clk => fft:f3.Clk
+Clk => fft:f4.Clk
+Clk => fft:f5.Clk
+Clk => fft:f6.Clk
+Clk => fft:f7.Clk
+T => enable1.IN1
+T => fft:f0.T
+Q0 <= fft:f0.Q
+Q1 <= fft:f1.Q
+Q2 <= fft:f2.Q
+Q3 <= fft:f3.Q
+Q4 <= fft:f4.Q
+Q5 <= fft:f5.Q
+Q6 <= fft:f6.Q
+Q7 <= fft:f7.Q
+Clear => fft:f0.Clear
+Clear => fft:f1.Clear
+Clear => fft:f2.Clear
+Clear => fft:f3.Clear
+Clear => fft:f4.Clear
+Clear => fft:f5.Clear
+Clear => fft:f6.Clear
+Clear => fft:f7.Clear
+
+
+|part1_3|part1:c|fft:f0
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f1
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f2
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f3
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f4
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f5
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f6
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|part1:c|fft:f7
+Clk => output.CLK
+T => output.OUTPUTSELECT
+Q <= output.DB_MAX_OUTPUT_PORT_TYPE
+Clear => output.OUTPUTSELECT
+
+
+|part1_3|display7seg:d0
+in_disp[0] => Mux0.IN19
+in_disp[0] => Mux1.IN19
+in_disp[0] => Mux2.IN19
+in_disp[0] => Mux3.IN19
+in_disp[0] => Mux4.IN19
+in_disp[0] => Mux5.IN19
+in_disp[0] => Mux6.IN19
+in_disp[1] => Mux0.IN18
+in_disp[1] => Mux1.IN18
+in_disp[1] => Mux2.IN18
+in_disp[1] => Mux3.IN18
+in_disp[1] => Mux4.IN18
+in_disp[1] => Mux5.IN18
+in_disp[1] => Mux6.IN18
+in_disp[2] => Mux0.IN17
+in_disp[2] => Mux1.IN17
+in_disp[2] => Mux2.IN17
+in_disp[2] => Mux3.IN17
+in_disp[2] => Mux4.IN17
+in_disp[2] => Mux5.IN17
+in_disp[2] => Mux6.IN17
+in_disp[3] => Mux0.IN16
+in_disp[3] => Mux1.IN16
+in_disp[3] => Mux2.IN16
+in_disp[3] => Mux3.IN16
+in_disp[3] => Mux4.IN16
+in_disp[3] => Mux5.IN16
+in_disp[3] => Mux6.IN16
+out_disp[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1_3|display7seg:d1
+in_disp[0] => Mux0.IN19
+in_disp[0] => Mux1.IN19
+in_disp[0] => Mux2.IN19
+in_disp[0] => Mux3.IN19
+in_disp[0] => Mux4.IN19
+in_disp[0] => Mux5.IN19
+in_disp[0] => Mux6.IN19
+in_disp[1] => Mux0.IN18
+in_disp[1] => Mux1.IN18
+in_disp[1] => Mux2.IN18
+in_disp[1] => Mux3.IN18
+in_disp[1] => Mux4.IN18
+in_disp[1] => Mux5.IN18
+in_disp[1] => Mux6.IN18
+in_disp[2] => Mux0.IN17
+in_disp[2] => Mux1.IN17
+in_disp[2] => Mux2.IN17
+in_disp[2] => Mux3.IN17
+in_disp[2] => Mux4.IN17
+in_disp[2] => Mux5.IN17
+in_disp[2] => Mux6.IN17
+in_disp[3] => Mux0.IN16
+in_disp[3] => Mux1.IN16
+in_disp[3] => Mux2.IN16
+in_disp[3] => Mux3.IN16
+in_disp[3] => Mux4.IN16
+in_disp[3] => Mux5.IN16
+in_disp[3] => Mux6.IN16
+out_disp[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

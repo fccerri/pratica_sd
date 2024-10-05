@@ -1,0 +1,24 @@
+# Compile of part2.v was successful.
+vsim work.part2
+# vsim work.part2 
+# Start time: 14:29:33 on Aug 22,2024
+# Loading work.part2
+add wave -position insertpoint  \
+sim:/part2/D \
+sim:/part2/Clk \
+sim:/part2/Qb \
+sim:/part2/Qa
+# WARNING: No extended dataflow license exists
+force -freeze sim:/part2/D 1 0, 0 {50 ps} -r 100
+force -freeze sim:/part2/Clk 1 0, 0 {100 ps} -r 200
+run
+run
+run
+run
+run
+run
+run
+# Project file C:/Users/rodri/OneDrive/Documentos/projetos/Quartus/Projeto1/part2.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 14:53:50 on Aug 22,2024, Elapsed time: 0:24:17
+# Errors: 0, Warnings: 4

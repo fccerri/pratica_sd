@@ -1,0 +1,68 @@
+# Compile of part1.vhd was successful.
+vsim work.part1
+# vsim work.part1 
+# Start time: 17:05:50 on Aug 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.part1(structural)
+add wave -position insertpoint sim:/part1/*
+add wave -position insertpoint sim:/part1/*
+force -freeze sim:/part1/Clk 1 0, 0 {12 ps} -r 25
+noforce sim:/part1/R
+force -freeze sim:/part1/R 1 0, 0 {25 ps} -r 50
+force -freeze sim:/part1/S 1 0, 0 {50 ps} -r 100
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 12 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 12 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 12 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 12 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 12 ps.
+vsim work.part1
+# End time: 17:08:16 on Aug 20,2024, Elapsed time: 0:02:26
+# Errors: 5, Warnings: 0
+# vsim work.part1 
+# Start time: 17:08:16 on Aug 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.part1(structural)
+add wave -position insertpoint sim:/part1/*
+force -freeze sim:/part1/Clk 1 0, 0 {0 ps} -r 1
+force -freeze sim:/part1/R 1 0, 0 {1 ps} -r 2
+force -freeze sim:/part1/S 1 0, 0 {2 ps} -r 4
+run
+vsim work.part1
+# End time: 17:09:35 on Aug 20,2024, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
+# vsim work.part1 
+# Start time: 17:09:35 on Aug 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.part1(structural)
+add wave -position insertpoint sim:/part1/*
+force -freeze sim:/part1/Clk 1 0, 0 {1 ps} -r 2
+force -freeze sim:/part1/R 1 0, 0 {2 ps} -r 4
+force -freeze sim:/part1/S 1 0, 0 {4 ps} -r 8
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1 ps.
+vsim work.part1
+# End time: 17:10:50 on Aug 20,2024, Elapsed time: 0:01:15
+# Errors: 1, Warnings: 0
+# vsim work.part1 
+# Start time: 17:10:50 on Aug 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.part1(structural)
+add wave -position insertpoint sim:/part1/*
+force -freeze sim:/part1/Clk 1 0, 0 {1 ps} -r 2
+force -freeze sim:/part1/R 1 0, 0 {2 ps} -r 4
+force -freeze sim:/part1/S 1 0, 0 {4 ps} -r 8
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1 ps.

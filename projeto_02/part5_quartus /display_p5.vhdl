@@ -1,0 +1,77 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity display_p5 is
+    port(
+        in_d0: in STD_LOGIC_VECTOR (2 downto 0);
+        in_d1: in STD_LOGIC_VECTOR (2 downto 0);
+        in_d2: in STD_LOGIC_VECTOR (2 downto 0);
+        in_d3: in STD_LOGIC_VECTOR (2 downto 0);
+        in_d4: in STD_LOGIC_VECTOR (2 downto 0);
+        in_d5: in STD_LOGIC_VECTOR (2 downto 0);
+        out_d0: out STD_LOGIC_VECTOR (6 downto 0);
+        out_d1: out STD_LOGIC_VECTOR (6 downto 0);
+        out_d2: out STD_LOGIC_VECTOR (6 downto 0);
+        out_d3: out STD_LOGIC_VECTOR (6 downto 0);
+        out_d4: out STD_LOGIC_VECTOR (6 downto 0);
+        out_d5: out STD_LOGIC_VECTOR (6 downto 0)
+    );
+end entity display_p5;
+
+architecture Behaviour of display_p5 is
+begin
+    process(in_d0)
+    begin
+        case in_d0 is
+            when "000" => out_d0 <= "0000001";
+            when "100" => out_d0 <= "1000010";
+            when "101" => out_d0 <= "0110000";
+            when others => out_d0 <= "1111111";
+        end case;
+    end process;
+    process(in_d1)
+    begin
+        case in_d1 is
+            when "000" => out_d1 <= "0110000";
+            when "001" => out_d1 <= "0000001";
+            when "101" => out_d1 <= "1000010";
+            when others => out_d1 <= "1111111";
+        end case;
+    end process;
+    process(in_d2)
+    begin
+        case in_d2 is
+            when "000" => out_d2 <= "1000010";
+            when "001" => out_d2 <= "0110000";
+            when "010" => out_d2 <= "0000001";
+            when others => out_d2 <= "1111111";
+        end case;
+    end process;
+    process(in_d3)
+    begin
+        case in_d3 is
+            when "001" => out_d3 <= "1000010";
+            when "010" => out_d3 <= "0110000";
+            when "011" => out_d3 <= "0000001";
+            when others => out_d3 <= "1111111";
+        end case;
+    end process;
+    process(in_d4)
+    begin
+        case in_d4 is
+            when "010" => out_d4 <= "1000010";
+            when "011" => out_d4 <= "0110000";
+            when "100" => out_d4 <= "0000001";
+            when others => out_d4 <= "1111111";
+        end case;
+    end process;
+    process(in_d5)
+    begin
+        case in_d5 is
+            when "011" => out_d5 <= "1000010";
+            when "100" => out_d5 <= "0110000";
+            when "101" => out_d5 <= "0000001";
+            when others => out_d5 <= "1111111";
+        end case;
+    end process;
+end architecture Behaviour;

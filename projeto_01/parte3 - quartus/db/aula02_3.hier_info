@@ -1,0 +1,26 @@
+|aula02_3
+Q <= aula02_2:inst2.Qa
+D => aula02_2:inst1.D
+Clk => inst.IN0
+Clk => aula02_2:inst2.Clk
+QNegado <= aula02_2:inst2.Qb
+
+
+|aula02_3|aula02_2:inst2
+Qa <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+Qb <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula02_3|aula02_2:inst1
+Qa <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+Qb <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

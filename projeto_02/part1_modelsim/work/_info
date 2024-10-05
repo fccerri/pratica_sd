@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/19.1
+Efft
+Z0 w1726591694
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/15451119/Desktop/projeto3/p1_simulacao
+Z4 8C:/Users/15451119/Desktop/projeto3/p1_vhdl/fft.vhdl
+Z5 FC:/Users/15451119/Desktop/projeto3/p1_vhdl/fft.vhdl
+l0
+L4
+VfXWN;@lg[oL0?Ybg5gAm:0
+!s100 m?3806N`[@XCCgMXofOKm0
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1726597295
+!i10b 1
+Z8 !s108 1726597295.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15451119/Desktop/projeto3/p1_vhdl/fft.vhdl|
+Z10 !s107 C:/Users/15451119/Desktop/projeto3/p1_vhdl/fft.vhdl|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehaviour
+R1
+R2
+DEx4 work 3 fft 0 22 fXWN;@lg[oL0?Ybg5gAm:0
+l15
+L13
+Vjk?OdYZCiN5o_=d@AY^4b3
+!s100 ?B1X3k>lDRl@]H41>P`0E3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Epart1
+Z13 w1726591695
+R1
+R2
+R3
+Z14 8C:/Users/15451119/Desktop/projeto3/p1_vhdl/part1.vhdl
+Z15 FC:/Users/15451119/Desktop/projeto3/p1_vhdl/part1.vhdl
+l0
+L4
+V9Z6ii3E]bA8kdeJLmaSbE2
+!s100 3j2Pbd24MB:WS8z]kR^1T2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15451119/Desktop/projeto3/p1_vhdl/part1.vhdl|
+Z17 !s107 C:/Users/15451119/Desktop/projeto3/p1_vhdl/part1.vhdl|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 5 part1 0 22 9Z6ii3E]bA8kdeJLmaSbE2
+l30
+L20
+VmJ98FeHc1d^2B[dFk:2623
+!s100 f7ckgBcAc5mZUCZD01c=J3
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
