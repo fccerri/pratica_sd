@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity ram32x4 is
+	port(
+		address: in STD_LOGIC_VECTOR (4 DOWNTO 0);
+		clock: in STD_LOGIC  := '1';
+		data: in STD_LOGIC_VECTOR (3 DOWNTO 0);
+		wren: in STD_LOGIC ;
+		q: out STD_LOGIC_VECTOR (3 DOWNTO 0)
+	);
+en entity;

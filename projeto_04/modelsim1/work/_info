@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/19.1
+Epart1
+Z0 w1727803835
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/15645380/Desktop/aula7/modelsim1
+Z5 8C:/Users/15645380/Desktop/aula7/part1/part1.vhd
+Z6 FC:/Users/15645380/Desktop/aula7/part1/part1.vhd
+l0
+L5
+Vl<FI14DQ_Pd<<KbHTO?0^0
+!s100 ^bY8`<fzl1U4Qj^h7YT_^2
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1727804211
+!i10b 1
+Z9 !s108 1727804211.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15645380/Desktop/aula7/part1/part1.vhd|
+Z11 !s107 C:/Users/15645380/Desktop/aula7/part1/part1.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R1
+R2
+R3
+DEx4 work 5 part1 0 22 l<FI14DQ_Pd<<KbHTO?0^0
+l27
+L15
+VFN6m=]1cK21PD5g?k5YE=0
+!s100 _1_e;GLJF`QekkiQ0_61I2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eram32x4
+Z14 w1727803797
+Z15 DPx9 altera_mf 20 altera_mf_components 0 22 @6M>I48X_jBQDo@?W=TN93
+R2
+R3
+R4
+Z16 8C:/Users/15645380/Desktop/aula7/part1/ram32x4.vhd
+Z17 FC:/Users/15645380/Desktop/aula7/part1/ram32x4.vhd
+l0
+L43
+VfUhhXH;Y?Hbn]KCm<EBEj3
+!s100 3<Y4N>RfzVJ`2TWR<S_A?3
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15645380/Desktop/aula7/part1/ram32x4.vhd|
+Z19 !s107 C:/Users/15645380/Desktop/aula7/part1/ram32x4.vhd|
+!i113 1
+R12
+R13
+Asyn
+R15
+R2
+R3
+DEx4 work 7 ram32x4 0 22 fUhhXH;Y?Hbn]KCm<EBEj3
+l59
+L55
+V?<7>]2X1GXGaF5^KzF7`W1
+!s100 Fjo?Z[gY>V6?^HQWRS]6f1
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
