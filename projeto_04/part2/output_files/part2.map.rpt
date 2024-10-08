@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part2
-Tue Oct  1 15:40:24 2024
+Tue Oct  8 17:45:59 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -19,9 +19,10 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  11. Source assignments for ram32x4:ram|altsyncram:altsyncram_component|altsyncram_hvv3:auto_generated
  12. Parameter Settings for User Entity Instance: ram32x4:ram|altsyncram:altsyncram_component
  13. altsyncram Parameter Settings by Entity Instance
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "display7seg:d5"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -48,14 +49,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct  1 15:40:24 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct  8 17:45:59 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; part2                                       ;
 ; Top-level Entity Name           ; part2                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 18                                          ;
+; Total pins                      ; 39                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 128                                         ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -176,9 +177,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
-; ram32x4.vhd                      ; yes             ; User Wizard-Generated File   ; C:/Users/15645380/Desktop/aula7/part2/ram32x4.vhd                            ;         ;
-; part2.vhd                        ; yes             ; User VHDL File               ; C:/Users/15645380/Desktop/aula7/part2/part2.vhd                              ;         ;
-; display7seg.vhd                  ; yes             ; User VHDL File               ; C:/Users/15645380/Desktop/aula7/part2/display7seg.vhd                        ;         ;
+; ram32x4.vhd                      ; yes             ; User Wizard-Generated File   ; C:/Users/15451119/Downloads/aula7/aula7/part2/ram32x4.vhd                    ;         ;
+; part2.vhd                        ; yes             ; User VHDL File               ; C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd                      ;         ;
+; display7seg.vhd                  ; yes             ; User VHDL File               ; C:/Users/15451119/Downloads/aula7/aula7/part2/display7seg.vhd                ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -188,37 +189,37 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_hvv3.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/15645380/Desktop/aula7/part2/db/altsyncram_hvv3.tdf                 ;         ;
+; db/altsyncram_hvv3.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/15451119/Downloads/aula7/aula7/part2/db/altsyncram_hvv3.tdf         ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                     ;
-+---------------------------------------------+-----------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                             ;
-+---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 4                                                                                 ;
-;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 7                                                                                 ;
-;     -- 7 input functions                    ; 0                                                                                 ;
-;     -- 6 input functions                    ; 0                                                                                 ;
-;     -- 5 input functions                    ; 0                                                                                 ;
-;     -- 4 input functions                    ; 7                                                                                 ;
-;     -- <=3 input functions                  ; 0                                                                                 ;
-;                                             ;                                                                                   ;
-; Dedicated logic registers                   ; 0                                                                                 ;
-;                                             ;                                                                                   ;
-; I/O pins                                    ; 18                                                                                ;
-; Total MLAB memory bits                      ; 0                                                                                 ;
-; Total block memory bits                     ; 128                                                                               ;
-;                                             ;                                                                                   ;
-; Total DSP Blocks                            ; 0                                                                                 ;
-;                                             ;                                                                                   ;
-; Maximum fan-out node                        ; ram32x4:ram|altsyncram:altsyncram_component|altsyncram_hvv3:auto_generated|q_a[0] ;
-; Maximum fan-out                             ; 7                                                                                 ;
-; Total fan-out                               ; 85                                                                                ;
-; Average fan-out                             ; 1.81                                                                              ;
-+---------------------------------------------+-----------------------------------------------------------------------------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 11               ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 21               ;
+;     -- 7 input functions                    ; 0                ;
+;     -- 6 input functions                    ; 0                ;
+;     -- 5 input functions                    ; 0                ;
+;     -- 4 input functions                    ; 21               ;
+;     -- <=3 input functions                  ; 0                ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 39               ;
+; Total MLAB memory bits                      ; 0                ;
+; Total block memory bits                     ; 128              ;
+;                                             ;                  ;
+; Total DSP Blocks                            ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; Address[0]~input ;
+; Maximum fan-out                             ; 11               ;
+; Total fan-out                               ; 180              ;
+; Average fan-out                             ; 1.75             ;
++---------------------------------------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -226,8 +227,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------+--------------+
-; |part2                                    ; 7 (0)               ; 0 (0)                     ; 128               ; 0          ; 18   ; 0            ; |part2                                                                            ; part2           ; work         ;
-;    |display7seg:d|                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|display7seg:d                                                              ; display7seg     ; work         ;
+; |part2                                    ; 21 (0)              ; 0 (0)                     ; 128               ; 0          ; 39   ; 0            ; |part2                                                                            ; part2           ; work         ;
+;    |display7seg:d0|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|display7seg:d0                                                             ; display7seg     ; work         ;
+;    |display7seg:d1|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|display7seg:d1                                                             ; display7seg     ; work         ;
+;    |display7seg:d4|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|display7seg:d4                                                             ; display7seg     ; work         ;
 ;    |ram32x4:ram|                          ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |part2|ram32x4:ram                                                                ; ram32x4         ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |part2|ram32x4:ram|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
 ;          |altsyncram_hvv3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |part2|ram32x4:ram|altsyncram:altsyncram_component|altsyncram_hvv3:auto_generated ; altsyncram_hvv3 ; work         ;
@@ -358,20 +361,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------+
 
 
++-------------------------------------------------+
+; Port Connectivity Checks: "display7seg:d5"      ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; in_disp[3..1] ; Input ; Info     ; Stuck at GND ;
++---------------+-------+----------+--------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 8                           ;
-;     normal            ; 8                           ;
-;         1 data inputs ; 1                           ;
-;         4 data inputs ; 7                           ;
-; boundary_port         ; 18                          ;
+; arriav_lcell_comb     ; 26                          ;
+;     normal            ; 26                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 3                           ;
+;         4 data inputs ; 21                          ;
+; boundary_port         ; 39                          ;
 ; stratixv_ram_block    ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.78                        ;
+; Average LUT depth     ; 1.32                        ;
 +-----------------------+-----------------------------+
 
 
@@ -390,24 +403,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Oct  1 15:40:15 2024
+    Info: Processing started: Tue Oct  8 17:45:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part2 -c part2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ram32x4.vhd
-    Info (12022): Found design unit 1: ram32x4-SYN File: C:/Users/15645380/Desktop/aula7/part2/ram32x4.vhd Line: 55
-    Info (12023): Found entity 1: ram32x4 File: C:/Users/15645380/Desktop/aula7/part2/ram32x4.vhd Line: 43
+    Info (12022): Found design unit 1: ram32x4-SYN File: C:/Users/15451119/Downloads/aula7/aula7/part2/ram32x4.vhd Line: 55
+    Info (12023): Found entity 1: ram32x4 File: C:/Users/15451119/Downloads/aula7/aula7/part2/ram32x4.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file part2.vhd
-    Info (12022): Found design unit 1: part2-Behaviour File: C:/Users/15645380/Desktop/aula7/part2/part2.vhd Line: 15
-    Info (12023): Found entity 1: part2 File: C:/Users/15645380/Desktop/aula7/part2/part2.vhd Line: 5
+    Info (12022): Found design unit 1: part2-Behaviour File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 18
+    Info (12023): Found entity 1: part2 File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file display7seg.vhd
-    Info (12022): Found design unit 1: display7seg-Behaviour File: C:/Users/15645380/Desktop/aula7/part2/display7seg.vhd Line: 11
-    Info (12023): Found entity 1: display7seg File: C:/Users/15645380/Desktop/aula7/part2/display7seg.vhd Line: 4
+    Info (12022): Found design unit 1: display7seg-Behaviour File: C:/Users/15451119/Downloads/aula7/aula7/part2/display7seg.vhd Line: 11
+    Info (12023): Found entity 1: display7seg File: C:/Users/15451119/Downloads/aula7/aula7/part2/display7seg.vhd Line: 4
 Info (12127): Elaborating entity "part2" for the top level hierarchy
-Info (12128): Elaborating entity "ram32x4" for hierarchy "ram32x4:ram" File: C:/Users/15645380/Desktop/aula7/part2/part2.vhd Line: 38
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15645380/Desktop/aula7/part2/ram32x4.vhd Line: 62
-Info (12130): Elaborated megafunction instantiation "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15645380/Desktop/aula7/part2/ram32x4.vhd Line: 62
-Info (12133): Instantiated megafunction "ram32x4:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/15645380/Desktop/aula7/part2/ram32x4.vhd Line: 62
+Info (12128): Elaborating entity "ram32x4" for hierarchy "ram32x4:ram" File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 41
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15451119/Downloads/aula7/aula7/part2/ram32x4.vhd Line: 62
+Info (12130): Elaborated megafunction instantiation "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15451119/Downloads/aula7/aula7/part2/ram32x4.vhd Line: 62
+Info (12133): Instantiated megafunction "ram32x4:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/15451119/Downloads/aula7/aula7/part2/ram32x4.vhd Line: 62
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -459,20 +472,24 @@ Info (12133): Instantiated megafunction "ram32x4:ram|altsyncram:altsyncram_compo
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hvv3.tdf
-    Info (12023): Found entity 1: altsyncram_hvv3 File: C:/Users/15645380/Desktop/aula7/part2/db/altsyncram_hvv3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_hvv3 File: C:/Users/15451119/Downloads/aula7/aula7/part2/db/altsyncram_hvv3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_hvv3" for hierarchy "ram32x4:ram|altsyncram:altsyncram_component|altsyncram_hvv3:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "display7seg" for hierarchy "display7seg:d" File: C:/Users/15645380/Desktop/aula7/part2/part2.vhd Line: 47
+Info (12128): Elaborating entity "display7seg" for hierarchy "display7seg:d0" File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 50
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "hex5[1]" is stuck at GND File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 14
+    Warning (13410): Pin "hex5[2]" is stuck at GND File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 14
+    Warning (13410): Pin "hex5[6]" is stuck at VCC File: C:/Users/15451119/Downloads/aula7/aula7/part2/part2.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 7 logic cells
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 21 logic cells
     Info (21064): Implemented 4 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4880 megabytes
-    Info: Processing ended: Tue Oct  1 15:40:24 2024
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Tue Oct  8 17:45:59 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 

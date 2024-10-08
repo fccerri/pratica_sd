@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part4
-Thu Oct  3 14:38:56 2024
+Tue Oct  8 16:48:22 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct  3 14:38:56 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct  8 16:48:22 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; part4                                       ;
 ; Top-level Entity Name           ; part4                                       ;
@@ -181,10 +181,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; ram32x4.vhd                      ; yes             ; User Wizard-Generated File             ; C:/Users/15645380/Desktop/aula7/part4/ram32x4.vhd                            ;         ;
-; part4.vhd                        ; yes             ; User VHDL File                         ; C:/Users/15645380/Desktop/aula7/part4/part4.vhd                              ;         ;
-; contador.vhd                     ; yes             ; User VHDL File                         ; C:/Users/15645380/Desktop/aula7/part4/contador.vhd                           ;         ;
-; display7seg.vhd                  ; yes             ; User VHDL File                         ; C:/Users/15645380/Desktop/aula7/part4/display7seg.vhd                        ;         ;
+; ram32x4.vhd                      ; yes             ; User Wizard-Generated File             ; C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.vhd                    ;         ;
+; part4.vhd                        ; yes             ; User VHDL File                         ; C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd                      ;         ;
+; contador.vhd                     ; yes             ; User VHDL File                         ; C:/Users/15451119/Downloads/aula7/aula7/part4/contador.vhd                   ;         ;
+; display7seg.vhd                  ; yes             ; User VHDL File                         ; C:/Users/15451119/Downloads/aula7/aula7/part4/display7seg.vhd                ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -194,8 +194,8 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_9i04.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/15645380/Desktop/aula7/part4/db/altsyncram_9i04.tdf                 ;         ;
-; ram32x4.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/15645380/Desktop/aula7/part4/ram32x4.mif                            ;         ;
+; db/altsyncram_9i04.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/15451119/Downloads/aula7/aula7/part4/db/altsyncram_9i04.tdf         ;         ;
+; ram32x4.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.mif                    ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -449,28 +449,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Oct  3 14:38:39 2024
+    Info: Processing started: Tue Oct  8 16:48:06 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part4 -c part4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ram32x4.vhd
-    Info (12022): Found design unit 1: ram32x4-SYN File: C:/Users/15645380/Desktop/aula7/part4/ram32x4.vhd Line: 56
-    Info (12023): Found entity 1: ram32x4 File: C:/Users/15645380/Desktop/aula7/part4/ram32x4.vhd Line: 43
+    Info (12022): Found design unit 1: ram32x4-SYN File: C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.vhd Line: 56
+    Info (12023): Found entity 1: ram32x4 File: C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file part4.vhd
-    Info (12022): Found design unit 1: part4-Behaviour File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 22
-    Info (12023): Found entity 1: part4 File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 5
+    Info (12022): Found design unit 1: part4-Behaviour File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 22
+    Info (12023): Found entity 1: part4 File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
-    Info (12022): Found design unit 1: contador-Behaviour File: C:/Users/15645380/Desktop/aula7/part4/contador.vhd Line: 17
-    Info (12023): Found entity 1: contador File: C:/Users/15645380/Desktop/aula7/part4/contador.vhd Line: 6
+    Info (12022): Found design unit 1: contador-Behaviour File: C:/Users/15451119/Downloads/aula7/aula7/part4/contador.vhd Line: 17
+    Info (12023): Found entity 1: contador File: C:/Users/15451119/Downloads/aula7/aula7/part4/contador.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file display7seg.vhd
-    Info (12022): Found design unit 1: display7seg-Behaviour File: C:/Users/15645380/Desktop/aula7/part4/display7seg.vhd Line: 11
-    Info (12023): Found entity 1: display7seg File: C:/Users/15645380/Desktop/aula7/part4/display7seg.vhd Line: 4
+    Info (12022): Found design unit 1: display7seg-Behaviour File: C:/Users/15451119/Downloads/aula7/aula7/part4/display7seg.vhd Line: 11
+    Info (12023): Found entity 1: display7seg File: C:/Users/15451119/Downloads/aula7/aula7/part4/display7seg.vhd Line: 4
 Info (12127): Elaborating entity "part4" for the top level hierarchy
-Info (12128): Elaborating entity "contador" for hierarchy "contador:c" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 58
-Info (12128): Elaborating entity "ram32x4" for hierarchy "ram32x4:ram" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 72
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15645380/Desktop/aula7/part4/ram32x4.vhd Line: 63
-Info (12130): Elaborated megafunction instantiation "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15645380/Desktop/aula7/part4/ram32x4.vhd Line: 63
-Info (12133): Instantiated megafunction "ram32x4:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/15645380/Desktop/aula7/part4/ram32x4.vhd Line: 63
+Info (12128): Elaborating entity "contador" for hierarchy "contador:c" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 58
+Info (12128): Elaborating entity "ram32x4" for hierarchy "ram32x4:ram" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 72
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "ram32x4:ram|altsyncram:altsyncram_component" File: C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.vhd Line: 63
+Info (12133): Instantiated megafunction "ram32x4:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/15451119/Downloads/aula7/aula7/part4/ram32x4.vhd Line: 63
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
@@ -522,25 +522,25 @@ Info (12133): Instantiated megafunction "ram32x4:ram|altsyncram:altsyncram_compo
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9i04.tdf
-    Info (12023): Found entity 1: altsyncram_9i04 File: C:/Users/15645380/Desktop/aula7/part4/db/altsyncram_9i04.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_9i04 File: C:/Users/15451119/Downloads/aula7/aula7/part4/db/altsyncram_9i04.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_9i04" for hierarchy "ram32x4:ram|altsyncram:altsyncram_component|altsyncram_9i04:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "display7seg" for hierarchy "display7seg:d0" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 82
+Info (12128): Elaborating entity "display7seg" for hierarchy "display7seg:d0" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 82
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "hex3[1]" is stuck at GND File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 16
-    Warning (13410): Pin "hex3[2]" is stuck at GND File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 16
-    Warning (13410): Pin "hex3[6]" is stuck at VCC File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 16
-    Warning (13410): Pin "hex5[1]" is stuck at GND File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 18
-    Warning (13410): Pin "hex5[2]" is stuck at GND File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 18
-    Warning (13410): Pin "hex5[6]" is stuck at VCC File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 18
+    Warning (13410): Pin "hex3[1]" is stuck at GND File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 16
+    Warning (13410): Pin "hex3[2]" is stuck at GND File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 16
+    Warning (13410): Pin "hex3[6]" is stuck at VCC File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 16
+    Warning (13410): Pin "hex5[1]" is stuck at GND File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 18
+    Warning (13410): Pin "hex5[2]" is stuck at GND File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 18
+    Warning (13410): Pin "hex5[6]" is stuck at VCC File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "raddress[0]" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 11
-    Warning (15610): No output dependent on input pin "raddress[1]" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 11
-    Warning (15610): No output dependent on input pin "raddress[2]" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 11
-    Warning (15610): No output dependent on input pin "raddress[3]" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 11
-    Warning (15610): No output dependent on input pin "raddress[4]" File: C:/Users/15645380/Desktop/aula7/part4/part4.vhd Line: 11
+    Warning (15610): No output dependent on input pin "raddress[0]" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 11
+    Warning (15610): No output dependent on input pin "raddress[1]" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 11
+    Warning (15610): No output dependent on input pin "raddress[2]" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 11
+    Warning (15610): No output dependent on input pin "raddress[3]" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 11
+    Warning (15610): No output dependent on input pin "raddress[4]" File: C:/Users/15451119/Downloads/aula7/aula7/part4/part4.vhd Line: 11
 Info (21057): Implemented 133 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 42 output pins
@@ -548,8 +548,8 @@ Info (21057): Implemented 133 device resources after synthesis - the final resou
     Info (21064): Implemented 4 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
     Info: Peak virtual memory: 4883 megabytes
-    Info: Processing ended: Thu Oct  3 14:38:56 2024
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Tue Oct  8 16:48:22 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:23
 
 

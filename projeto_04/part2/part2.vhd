@@ -8,7 +8,10 @@ entity part2 is
 		w: in STD_LOGIC;
 		Address: in STD_LOGIC_VECTOR (4 downto 0);
 		DataIn: in STD_LOGIC_VECTOR (3 downto 0);
-		DataOut: out STD_LOGIC_VECTOR (6 downto 0)
+		hex0: out STD_LOGIC_VECTOR (6 downto 0);
+		hex1: out STD_LOGIC_VECTOR (6 downto 0);
+		hex4: out STD_LOGIC_VECTOR (6 downto 0);
+		hex5: out STD_LOGIC_VECTOR (6 downto 0)
 	);
 end entity;
 
@@ -44,10 +47,28 @@ begin
 		q => aux
 	);
 	
-	d: display7seg
+	d0: display7seg
 	port map(
 		in_disp => aux,
-		out_disp => DataOut
+		out_disp => hex0
+	);
+	
+	d1: display7seg
+	port map(
+		in_disp => DataIn,
+		out_disp => hex1
+	);
+	
+	d4: display7seg
+	port map(
+		in_disp => Address(3 downto 0),
+		out_disp => hex4
+	);
+	
+	d5: display7seg
+	port map(
+		in_disp => "000" & Address (4),
+		out_disp => hex5
 	);
 	
 end architecture Behaviour;

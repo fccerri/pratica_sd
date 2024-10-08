@@ -2,21 +2,51 @@
 clk => ram32x4:ram.clock
 w => ram32x4:ram.wren
 Address[0] => ram32x4:ram.address[0]
+Address[0] => display7seg:d4.in_disp[0]
 Address[1] => ram32x4:ram.address[1]
+Address[1] => display7seg:d4.in_disp[1]
 Address[2] => ram32x4:ram.address[2]
+Address[2] => display7seg:d4.in_disp[2]
 Address[3] => ram32x4:ram.address[3]
+Address[3] => display7seg:d4.in_disp[3]
 Address[4] => ram32x4:ram.address[4]
+Address[4] => display7seg:d5.in_disp[0]
 DataIn[0] => ram32x4:ram.data[0]
+DataIn[0] => display7seg:d1.in_disp[0]
 DataIn[1] => ram32x4:ram.data[1]
+DataIn[1] => display7seg:d1.in_disp[1]
 DataIn[2] => ram32x4:ram.data[2]
+DataIn[2] => display7seg:d1.in_disp[2]
 DataIn[3] => ram32x4:ram.data[3]
-DataOut[0] << display7seg:d.out_disp[0]
-DataOut[1] << display7seg:d.out_disp[1]
-DataOut[2] << display7seg:d.out_disp[2]
-DataOut[3] << display7seg:d.out_disp[3]
-DataOut[4] << display7seg:d.out_disp[4]
-DataOut[5] << display7seg:d.out_disp[5]
-DataOut[6] << display7seg:d.out_disp[6]
+DataIn[3] => display7seg:d1.in_disp[3]
+hex0[0] << display7seg:d0.out_disp[0]
+hex0[1] << display7seg:d0.out_disp[1]
+hex0[2] << display7seg:d0.out_disp[2]
+hex0[3] << display7seg:d0.out_disp[3]
+hex0[4] << display7seg:d0.out_disp[4]
+hex0[5] << display7seg:d0.out_disp[5]
+hex0[6] << display7seg:d0.out_disp[6]
+hex1[0] << display7seg:d1.out_disp[0]
+hex1[1] << display7seg:d1.out_disp[1]
+hex1[2] << display7seg:d1.out_disp[2]
+hex1[3] << display7seg:d1.out_disp[3]
+hex1[4] << display7seg:d1.out_disp[4]
+hex1[5] << display7seg:d1.out_disp[5]
+hex1[6] << display7seg:d1.out_disp[6]
+hex4[0] << display7seg:d4.out_disp[0]
+hex4[1] << display7seg:d4.out_disp[1]
+hex4[2] << display7seg:d4.out_disp[2]
+hex4[3] << display7seg:d4.out_disp[3]
+hex4[4] << display7seg:d4.out_disp[4]
+hex4[5] << display7seg:d4.out_disp[5]
+hex4[6] << display7seg:d4.out_disp[6]
+hex5[0] << display7seg:d5.out_disp[0]
+hex5[1] << display7seg:d5.out_disp[1]
+hex5[2] << display7seg:d5.out_disp[2]
+hex5[3] << display7seg:d5.out_disp[3]
+hex5[4] << display7seg:d5.out_disp[4]
+hex5[5] << display7seg:d5.out_disp[5]
+hex5[6] << display7seg:d5.out_disp[6]
 
 
 |part3|ram32x4:ram
@@ -62,7 +92,121 @@ q[2] <= memory_array.DATAOUT2
 q[3] <= memory_array.DATAOUT3
 
 
-|part3|display7seg:d
+|part3|display7seg:d0
+in_disp[0] => Mux0.IN19
+in_disp[0] => Mux1.IN19
+in_disp[0] => Mux2.IN19
+in_disp[0] => Mux3.IN19
+in_disp[0] => Mux4.IN19
+in_disp[0] => Mux5.IN19
+in_disp[0] => Mux6.IN19
+in_disp[1] => Mux0.IN18
+in_disp[1] => Mux1.IN18
+in_disp[1] => Mux2.IN18
+in_disp[1] => Mux3.IN18
+in_disp[1] => Mux4.IN18
+in_disp[1] => Mux5.IN18
+in_disp[1] => Mux6.IN18
+in_disp[2] => Mux0.IN17
+in_disp[2] => Mux1.IN17
+in_disp[2] => Mux2.IN17
+in_disp[2] => Mux3.IN17
+in_disp[2] => Mux4.IN17
+in_disp[2] => Mux5.IN17
+in_disp[2] => Mux6.IN17
+in_disp[3] => Mux0.IN16
+in_disp[3] => Mux1.IN16
+in_disp[3] => Mux2.IN16
+in_disp[3] => Mux3.IN16
+in_disp[3] => Mux4.IN16
+in_disp[3] => Mux5.IN16
+in_disp[3] => Mux6.IN16
+out_disp[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|display7seg:d1
+in_disp[0] => Mux0.IN19
+in_disp[0] => Mux1.IN19
+in_disp[0] => Mux2.IN19
+in_disp[0] => Mux3.IN19
+in_disp[0] => Mux4.IN19
+in_disp[0] => Mux5.IN19
+in_disp[0] => Mux6.IN19
+in_disp[1] => Mux0.IN18
+in_disp[1] => Mux1.IN18
+in_disp[1] => Mux2.IN18
+in_disp[1] => Mux3.IN18
+in_disp[1] => Mux4.IN18
+in_disp[1] => Mux5.IN18
+in_disp[1] => Mux6.IN18
+in_disp[2] => Mux0.IN17
+in_disp[2] => Mux1.IN17
+in_disp[2] => Mux2.IN17
+in_disp[2] => Mux3.IN17
+in_disp[2] => Mux4.IN17
+in_disp[2] => Mux5.IN17
+in_disp[2] => Mux6.IN17
+in_disp[3] => Mux0.IN16
+in_disp[3] => Mux1.IN16
+in_disp[3] => Mux2.IN16
+in_disp[3] => Mux3.IN16
+in_disp[3] => Mux4.IN16
+in_disp[3] => Mux5.IN16
+in_disp[3] => Mux6.IN16
+out_disp[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|display7seg:d4
+in_disp[0] => Mux0.IN19
+in_disp[0] => Mux1.IN19
+in_disp[0] => Mux2.IN19
+in_disp[0] => Mux3.IN19
+in_disp[0] => Mux4.IN19
+in_disp[0] => Mux5.IN19
+in_disp[0] => Mux6.IN19
+in_disp[1] => Mux0.IN18
+in_disp[1] => Mux1.IN18
+in_disp[1] => Mux2.IN18
+in_disp[1] => Mux3.IN18
+in_disp[1] => Mux4.IN18
+in_disp[1] => Mux5.IN18
+in_disp[1] => Mux6.IN18
+in_disp[2] => Mux0.IN17
+in_disp[2] => Mux1.IN17
+in_disp[2] => Mux2.IN17
+in_disp[2] => Mux3.IN17
+in_disp[2] => Mux4.IN17
+in_disp[2] => Mux5.IN17
+in_disp[2] => Mux6.IN17
+in_disp[3] => Mux0.IN16
+in_disp[3] => Mux1.IN16
+in_disp[3] => Mux2.IN16
+in_disp[3] => Mux3.IN16
+in_disp[3] => Mux4.IN16
+in_disp[3] => Mux5.IN16
+in_disp[3] => Mux6.IN16
+out_disp[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out_disp[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|display7seg:d5
 in_disp[0] => Mux0.IN19
 in_disp[0] => Mux1.IN19
 in_disp[0] => Mux2.IN19
