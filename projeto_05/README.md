@@ -30,7 +30,7 @@ Nessa etapa implementamos uma FSM que reconhece duas sequencias de um dado input
  ![diagrama](imagens/diagrama.png)
 
  # Parte IV
- A parte quatro consiste na implementação do código morse do projeto anterior, com a mudança que se torna obrigatório o uso de uma FSM, no entanto já utilizamos uma Maquina de Estado Finitos para a resolução desse projeto, é possível conferir os detalhes [aqui](../projeto_04). 
+ A parte quatro consiste na implementação do código morse do projeto anterior, com a mudança que se torna obrigatório o uso de uma FSM, no entanto já utilizamos uma Maquina de Estado Finitos para a resolução desse projeto, é possível conferir os detalhes [aqui](../projeto_03). 
 
 
 
