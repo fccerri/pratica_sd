@@ -24,19 +24,126 @@ Nessa etapa o código de estados fornecido para utilizarmos foi o seguinte:
 
  
 ### Top Level Design
- ->> imagem
+``` vhdl
+process(clk)
+begin
+    if rising_edge(clk) then
+		if reset = '0' then
+			state <= A;
+			dz <= '0';
+        dx <= "000000000";
+		else 
+			case state is
+            when A =>
+                dz <= '0';
+                dx <= "000000000";
+                if w = '1' then
+                    state <= B;
+                elsif w = '0' then
+                    state <= F;
+                end if;
+            when B =>
+                dz <= '0';
+                dx <= "000000011";
+                if w = '1' then
+                    state <= C;
+                elsif w = '0' then 
+                    state <= F;
+                end if;
+            when C =>
+                dz <= '0';
+                dx <= "000000101";
+                if w = '1' then
+                    state <= D;
+                elsif w = '0' then 
+                    state <= F;
+                end if;
+            when D =>
+                dz <= '0';
+                dx <= "000001001";
+                if w = '1' then
+                    state <= E;
+                elsif w = '0' then 
+                    state <= F;
+                end if;
+            when E =>
+                dz <= '1';
+                dx <= "000010001";
+                if w = '1' then
+                    state <= E;
+                elsif w = '0' then 
+                    state <= F;
+                end if;
+            when F =>
+                dz <= '0';
+                dx <= "000100001";
+                if w = '1' then
+                    state <= B;
+                elsif w = '0' then  
+                    state <= G;
+                end if;
+            when G =>
+                dz <= '0';
+                dx <= "001000001";
+                if w = '1' then
+                    state <= B;
+                elsif w = '0' then 
+                    state <= H;
+                end if;
+            when H =>
+                dz <= '0';
+                dx <= "010000001";
+                if w = '1' then
+                    state <= B;
+                elsif w = '0' then  
+                    state <= I;
+                end if;
+            when I =>
+                dz <= '1';
+                dx <= "100000001";
+                if w = '1' then
+                    state <= B;
+                elsif w = '0' then
+							state <= I;
+                end if;
+        end case;
+		end if;
+   end if;
+end process;
+```
+
 
 ### Flip Flops Instanciados
- ->> imagem
+``` vhdl
+entity ff is
+	port(
+		clk : in STD_LOGIC;
+		data : in STD_LOGIC;
+		q : out STD_LOGIC
+	);
+end entity;
+
+architecture Behaviuour of ff is
+begin
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			q <= data;
+		end if;
+	end process;
+end architecture;
+```
 
 ### Simulação 
+![simulação_1](imagens/simulação_1.png) 
+
 
 ## Etapa II
 Nessa etapa o código de estados fornecido para utilizarmos foi o seguinte:
 ![codigo_de_estado_2](imagens/codigo_de_estado_2.png)
 
-### Alterações no Código
--> imagem 
+### Nova simulação
+![simulação_2](imagens/simulação_2.png) 
 
 
 # Parte IV
