@@ -1,0 +1,131 @@
+|part1
+clk => ff:ffz.clk
+clk => dx[0].CLK
+clk => dx[1].CLK
+clk => dx[2].CLK
+clk => dx[3].CLK
+clk => dx[4].CLK
+clk => dx[5].CLK
+clk => dx[6].CLK
+clk => dx[7].CLK
+clk => dx[8].CLK
+clk => dz.CLK
+clk => ff:ff0.clk
+clk => ff:ff1.clk
+clk => ff:ff2.clk
+clk => ff:ff3.clk
+clk => ff:ff4.clk
+clk => ff:ff5.clk
+clk => ff:ff6.clk
+clk => ff:ff7.clk
+clk => ff:ff8.clk
+clk => state~1.DATAIN
+w => Selector0.IN4
+w => Selector0.IN5
+w => Selector0.IN6
+w => Selector0.IN7
+w => Selector3.IN7
+w => Selector3.IN8
+w => Selector0.IN8
+w => Selector4.IN4
+w => Selector4.IN5
+w => Selector4.IN6
+w => Selector4.IN7
+w => Selector4.IN8
+w => Selector7.IN7
+w => Selector7.IN8
+w => Selector1.IN0
+w => Selector2.IN0
+w => Selector5.IN0
+w => Selector6.IN0
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => dz.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => dx.OUTPUTSELECT
+reset => state.A.DATAIN
+z <= ff:ffz.q
+led[0] <= ff:ff0.q
+led[1] <= ff:ff1.q
+led[2] <= ff:ff2.q
+led[3] <= ff:ff3.q
+led[4] <= ff:ff4.q
+led[5] <= ff:ff5.q
+led[6] <= ff:ff6.q
+led[7] <= ff:ff7.q
+led[8] <= ff:ff8.q
+
+
+|part1|ff:ffz
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff0
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff1
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff2
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff3
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff4
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff5
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff6
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff7
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|ff:ff8
+clk => q~reg0.CLK
+data => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

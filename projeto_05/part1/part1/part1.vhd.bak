@@ -1,0 +1,89 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+
+entity part is
+	port(
+		clk: in STD_LOGIC;--clock
+		w: in STD_LOGIC;--entrada
+		z: OUT STD_LOGIC--saida
+	);
+end entity;
+
+architecture Behaviour of part1 is
+begin 
+	process(clk)
+		type state_type is (A, B, C, D, E, F, G, H, I); --nomes dos estados
+		variable state: state_type :=A; --inicializa no estado A
+	begin process
+		if rising_edge(clk) then
+			case state is
+				when A =>
+					z <= '0';
+					if w='1' then
+						state := B;
+					else 
+						state := F;
+					end if;
+				when B =>
+					z <= '0';
+					if w='1' then
+						state := C;
+					else 
+						state := F;
+					end if;
+				when C =>
+					z <= '0';
+					if w='1' then
+						state := D;
+					else 
+						state := F;
+					end if;
+				when D =>
+					z <= '0';
+					if w='1' then
+						state := E;
+					else 
+						state := F;
+					end if;
+				when E =>
+					z <= '1';
+					if w='1' then
+						state := E;
+					else 
+						state := F;
+					end if;
+				when F =>
+					z <= '0';
+					if w='1' then
+						state := B;
+					else 
+						state := G;
+					end if;
+				when G =>
+					z <= '0';
+					if w='1' then
+						state := B;
+					else 
+						state := H;
+					end if;
+				when H =>
+					z <= '0';
+					if w='1' then
+						state := B;
+					else 
+						state := I;
+					end if;
+				when I =>
+					z <= '1';
+					if w='1' then
+						state := B;
+					else 
+						state := I;
+					end if;
+			end case;
+		end if;
+	end process;
+end architecture;
+		

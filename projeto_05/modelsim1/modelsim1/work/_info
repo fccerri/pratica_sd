@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/19.1
+Eff
+Z0 w1729010390
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/15645380/Desktop/aula8/modelsim1
+Z5 8C:/Users/15645380/Desktop/aula8/part1/ff.vhd
+Z6 FC:/Users/15645380/Desktop/aula8/part1/ff.vhd
+l0
+L5
+VeCh6[DA_`S9YDaiCV9Ebg0
+!s100 TX7`Z;:hW`EjiB3_:K^aI0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1729019698
+!i10b 1
+Z9 !s108 1729019698.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15645380/Desktop/aula8/part1/ff.vhd|
+Z11 !s107 C:/Users/15645380/Desktop/aula8/part1/ff.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehaviuour
+R1
+R2
+R3
+DEx4 work 2 ff 0 22 eCh6[DA_`S9YDaiCV9Ebg0
+l14
+L13
+V[hN`>fh5FLe12C`a640NJ2
+!s100 f=U>Yz>[QK8EeKEHNYT2G0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Epart1
+Z14 w1729019556
+R1
+R2
+R3
+R4
+Z15 8C:/Users/15645380/Desktop/aula8/part1/part1.vhd
+Z16 FC:/Users/15645380/Desktop/aula8/part1/part1.vhd
+l0
+L5
+VW6c[_`^IVjoc9a;>P@I3l1
+!s100 jAM:=_cCe_AUU=F;FbL;c3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15645380/Desktop/aula8/part1/part1.vhd|
+Z18 !s107 C:/Users/15645380/Desktop/aula8/part1/part1.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+Z19 DEx4 work 5 part1 0 22 W6c[_`^IVjoc9a;>P@I3l1
+l30
+L15
+Vg_zX;cke8T>CIi9l?<`bN3
+!s100 C^AYTQH>SkHPdhJ;SVHdl1
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
