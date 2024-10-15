@@ -31,7 +31,7 @@ begin
 		if reset = '0' then
 			state <= A;
 			dz <= '0';
-        dx <= "000000000";
+            dx <= "000000000";
 		else 
 			case state is
             when A =>
@@ -104,7 +104,7 @@ begin
                 if w = '1' then
                     state <= B;
                 elsif w = '0' then
-							state <= I;
+			    	state <= I;
                 end if;
         end case;
 		end if;
