@@ -1,0 +1,17 @@
+[libraries]
+
+cpu.files=[
+    "cpu.vhd",
+]
+
+ula.files=[
+    "ula.vhd",
+]
+
+uc.files=[
+    "uc.vhd",
+]
+
+ram256x8.files=[
+    "ram256x8.vhd",
+]
