@@ -55,18 +55,14 @@ begin
     R <= Solution when OP="0000" or OP="0001" else
          A and B when OP="0010" else
          A or B when OP="0011" else
-         not A when OP="0100" else
-         "00000000";
+         not A when OP="0100";
 
-    Zero <= '1' when (OP="0000" or OP="0001" or OP="0010" or OP="0011" or OP="0100") and R="00000000" else
-            '0';
+    Zero <= '1' when (OP="0000" or OP="0001" or OP="0010" or OP="0011" or OP="0100") and R="00000000";
 
-    Sinal <= R(7);
+    Sinal <= R(7) when (OP="0000" or OP="0001" or OP="0010" or OP="0011" or OP="0100");
 
-    Carry <= Cin(7) when OP="0000" or OP="0001" else
-             '0';
+    Carry <= Cin(7) when OP="0000" or OP="0001";
 
-    Overflow <= Cin(7) xor Cout when OP="0000" or OP="0001" else
-                '0';
+    Overflow <= Cin(7) xor Cout when OP="0000" or OP="0001";
     
 end architecture Behaviour;
