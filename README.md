@@ -4,8 +4,3 @@ Esse repositório contém todos os trabalhos realizados para a disciplina Práti
 - Felipe Camargo Cerri
 - Rodrigo Silva de Almeida
 - Matheus Aparecido de Almeida Rodriguez
-
-# Autoria 
-- Felipe Camargo Cerri
-- Rodrigo Silva de Almeida
-- Matheus Aparecido de Almeida Rodriguez
